@@ -11,7 +11,7 @@ export class ProductsServiceService {
   constructor(private http: HttpClient) { }
 
   //Conexion con la API de backend
-  URL = "http://localhost:5000/api/product";
+  URL = "http://localhost:3000/api/product";
 
   getProducst():Observable<Product[]> {
     return this.http.get<Product[]>(this.URL)
